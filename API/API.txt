@@ -1,0 +1,1 @@
+4 ways to call API - XMLHttpRequest, fetch, axios, jQuery

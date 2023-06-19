@@ -1,0 +1,26 @@
+localStorage - store, read, update and remove data
+no expiry date: data never gets lost even you close the browser
+
+localStorage store data as key value pair - string
+setItem(key,value)
+localStorage.setItem("userName","anisul");
+localStorage.setItem("password","sakib127@");
+
+getItem(key)
+const userName = localStorage.getItem("userName");
+const userPassword = localStorage.getItem("password");
+
+console.log(userName, userPassword);                    //  anisul sakib127@
+
+removeItem(key)
+localStorage.removeItem("userName");
+localStorage.removeItem("password");
+
+const countries = ["ban","ind","pak"];
+localStorage.setItem("countries",JSON.stringify(countries));
+
+const countriesList = JSON.parse(localStorage.getItem("countries"));
+
+console.log(countriesList);
+
+localStorage.clear();

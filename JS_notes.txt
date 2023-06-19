@@ -1,0 +1,2364 @@
+<script>
+        //here goes the code
+</script>
+
+//  How to show output in Javascript
+alert("SAKIB AHMED");
+
+alert('SAKIB ANIK');
+
+alert('SAK"IB A"NIK');
+
+alert("SAK'IB A'NIK");
+
+document.write("I love Bangladesh!");
+
+console.log("I love Bangladesh!");
+
+console.log(123);
+
+console.log(123.25);
+
+document.write("<h1>I love team leader!</h1>");
+
+document.write("Name : SAKIB ANIK");
+document.write("<br/>");                    //Line Breaker
+document.write("Phone : 01780943003");
+
+document.write("Name : SAKIB ANIK<br/>");                    //Line Breaker
+document.write("Phone : 01780943003");
+
+//  How to add javascript in HTML:
+Inline JS:
+<body onload="alert('Hello');">
+</body>
+
+Internal JS:
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert("Heelo");
+    </script>
+</head>
+
+<body onload="alert('Hello');">
+
+    <script>
+        alert("Heelo");
+    </script>
+</body>
+
+External JS:
+<body>
+
+    <script src="index.js"></script>
+</body>
+
+index.js:
+alert('sakib');
+
+//  4 types of DataTypes in JS:
+1.number
+2.string
+3.boolean
+4.objects
+
+typeof('anisul');
+->'string'
+
+typeof(345);
+->'number'
+
+typeof(true);
+->'boolean'
+
+// Single Line Comments
+/* 
+    multi
+        line
+            comment
+*/
+
+// Declaring Variable
+var name = "Anisul Islam"; // Dynamic Initialization
+
+Valid Variable Demo:
+name1
+firstName // camelCase Convention
+
+var name,age;
+name = "Anisul Islam";
+age = 45;
+
+var num = 20;
+num = toString(num);        // number to string conversion
+console.log(typeof(num));   // string
+
+var num = "20";                                                 var num = "20.5";
+num = parseInt(num);        // string to number conversion      num = parseFloat(num);
+console.log(typeof(num));   // number                           
+
+var num = 2.5678;
+console.log(num.toFixed());  //  3
+console.log(num.toFixed(1)); //  2.6
+console.log(num.toFixed(2)); //  2.57
+
+var num = 2.4678;               // num.toFixed() returns string
+console.log(num.toFixed());     // 2
+console.log(num.toFixed(1));    // 2.5
+console.log(num.toFixed(2));    // 2.47
+
+var num = 2.4678;                   // num.toPrecision() returns string
+console.log(num.toPrecision());     // 2.4678   
+console.log(num.toPrecision(1));    // 2
+console.log(num.toPrecision(2));    // 2.5
+
+Number Method:
+console.log(Number("12"));  // Converts string to number    console.log(Number("12.5")); console.log(Number("   12.5   ")); console.log(Number(true)); console.log(Number(false));
+console.log(typeof(Number("12")));  // number                                                                               // 1                       // 0 
+
+String Concatenation:
+document.write("Sakib"+" Ahmed"+" Anik");
+
+// Library Functions For String :
+// String Length :
+var text = prompt("Enter your name : ");
+document.write("Number of characers : "+text.length);   // return type number
+
+var text = "SAKiB";
+document.write(text.charAt(3));     // i
+
+var text = "SAKiB";
+text = text.toUpperCase();          // SAKIB
+document.write(text.charAt(3));     // I
+
+var text = "SAKIB";
+text = text.toLowerCase();          // sakib
+document.write(text.charAt(3));     // i
+
+var text1 = "SAKIB";
+var text2 = " AHMED";
+document.write(text1.concat(text2));    // SAKIB AHMED
+
+var text1 = "sakib";
+var text = text1.slice(1,4);
+document.write(text);           // aki
+
+// Types Of Operators:
+1. Arithmetic Operators : + , - , * (Asterisk) , / , % (Modulus, Remainder) , ** (Exponent) , ++ (increment) , -- (decrement)
+2. Assignment Operators : = , += , -= , *= , /= , **= , %= 
+3. Relational Operators : > , >= , < , <= , == , === , != , !== ==> returns boolean values ( true, false)
+4. Logical Operators    : && , || , !
+
+2+3
+-> 5
+5-78
+-> -73
+5*3
+-> 15
+5/2
+-> 2.5
+2**3
+-> 8
+5%3
+-> 2
+
+// For clearing the console screen : 
+clear();
+
+var a = 6;
+-> undefined
+a++;
+-> 6
+a
+-> 7
+++a;
+-> 8
+a
+-> 8
+a--;
+-> 8
+a
+-> 7
+--a;
+-> 6
+a = 6;
+a += 3;
+-> 9
+a -= 2;
+-> 7
+a *= 5;
+-> 35
+a
+-> 35
+a /= 7;
+-> 5
+a %= 2;
+-> 1
+a++;
+-> 1
+a **= 2;
+-> 4
+
+    x += y;
+==> x = x + y;
+
+var num = "20";
+num = parseInt(num,10); // converting string to 10 base number
+
+var num1 = 20;
+console.log(num1==20);
+-> true
+console.log(num1!=20);
+-> false
+console.log(num1>=20);
+-> true
+console.log(num1<=20);
+-> true
+console.log(num1<20);
+-> false
+
+console.log(20=="20"); // checks only value , not datatype
+-> true
+
+console.log(20==="20"); // checks both value and datatype
+-> false
+
+console.log(20!="20");  // checks only value , not datatype
+-> false
+undefined
+console.log(20!=="20"); // checks both value and datatype
+-> true
+
+console.log(!true);
+-> false
+undefined
+console.log(!false);
+-> true
+
+Control Statement: 2 types
+1. Conditional Control Statement ==> ( if , else if , else) ,  switch
+2. Loop Control Statement ==> for , while, do while
+
+// if , else if , else
+if(condition){
+
+}
+else if(condition){
+
+}
+else{
+    
+}
+
+// switch
+
+switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
+
+while (condition) {
+    
+}
+
+do {
+    
+} while (condition);
+
+// Ternary Operator:
+
+(a>b)?a:b;
+
+// Function:
+
+function GetSquare(x) {
+    return x*x;
+}
+
+var num = parseInt(prompt("Enter number : "));
+
+document.write(GetSquare(num));
+
+function GetSquare(x,y) {
+    return x*y;
+}
+
+var num1 = parseInt(prompt("Enter number1 : "));
+var num2 = parseInt(prompt("Enter number2 : "));
+
+document.write(GetSquare(num1,num2));
+
+IIFE ==> Immediately Invokable Function Expressions
+
+(function GetSquare() {
+    document.write("Wanted");
+})();
+
+(function GetSquare(mes) {
+    document.write(mes);
+})('sakib');
+
+// Function Expression:
+
+const getAdd = function GetSquare(mes1,mes2) {
+    document.write(mes1+mes2);
+};
+
+getAdd("5","10");   // 510
+
+const getAdd = function GetSquare(mes1,mes2) {
+    document.write(mes1+mes2);
+};
+
+getAdd(5,10); // 15
+
+// Array: object, collection of variables
+
+var names = new Array(5);
+
+var names = new Array(); // it is also permitted
+
+names[0] = "Anik";
+names[1] = "Anik1";
+names[2] = "Anik2";
+names[3] = "Anik3";
+names[4] = "Anik5";
+
+document.write(names); // Anik,Anik1,Anik2,Anik3,Anik5
+document.write(names[2]); // Anik2
+document.write(names.length); // 5
+
+for (let index = 0; index < names.length; index++) {
+    document.write(names[index]+"<br/>");
+}
+
+names.forEach(element => {
+    document.write(element+"<br/>");
+});
+
+var nums = [5,8,9,5,41];
+
+var names = ["Sakib","Ahmed","Anik"];
+
+// Array Library Methods:
+
+names.push('Sokina');   // Adds element at the last
+names.unshift('Sumon'); // Adds element at the first
+names.pop();   // removes the last element of the array
+names.shift(); // opposite of pop, removes the first element of the array
+
+// splice() : For adding and removing elements:
+// For Adding Elements:
+
+names.splice(index position,amount of elements you want to remove,elements you want to add);
+names.splice(2,0,'rahim','karim');
+
+// For Removing Elements:
+
+names.splice(starting index,ending index);
+names.splice(1,2);
+
+// slice()
+
+var newArray = names.slice(1); // removes first element
+names.slice(number of elements you want to remove from index 0);
+var newArray = names.slice(1,2);
+var newArray = names.slice(start index,end index before affected); cuts sub array
+
+// sort : works with alphabets only
+
+names.sort();          // sorts in ascending order
+names.reverse();       // sorts in descending order
+
+// for working with numbers use this anonymous method:
+
+// sorts in ascending order:
+
+var nums = [20,5,25,45,1];
+nums.sort(function(a,b){
+    return a-b;
+});
+document.write(names);  // 1,5,20,25,45
+
+// sorts in descending order
+
+var nums = [20,5,25,45,1];
+nums.sort(function(a,b){
+    return b-a;
+});
+document.write(names); // 45,25,20,5,1
+
+var c1 = ['Ban','Ind'];
+var c2 = ['Syl','Ctg'];
+
+var c = c1.concat(c2);
+
+document.write(c);
+
+// Taking Input Using Array:
+
+var names = new Array(2); 
+
+for(var i = 0; i<names.length ; i++) {
+    names[i] = parseInt(prompt('Enter Number : '));
+};
+
+document.write(names);
+
+var nameAndScores = [['Sakib',12],['Anik',25],['Ahmed',37]];
+
+// For clearing console window:
+
+console.clear();
+
+text.split(',');
+
+// Declaring Object
+
+var student = {
+    name: "Sakib Ahmed",
+    age: 27,
+    cgpa: 3.92,
+    lang: ['Eng','Ban']
+}
+
+console.log(student.name); // Sakib Ahmed
+
+// Declaring Constructor
+
+function Student(name, age, cgpa, lang){
+    this.name = name;
+    this.age = age;
+    this.cgpa = cgpa;
+    this.lang = lang;
+    this.display = function(){
+        console.log(this.name);
+        console.log(this.age);
+        console.log(this.cgpa);
+        console.log(this.lang);
+    }
+}
+
+var student1 = new Student("Sakib Ahmed",27,3.92,['Eng','Ban']);
+
+console.log(student1.name); // Sakib Ahmed
+
+student1.display();
+
+// Math Object
+
+Math.sqrt(25);  // 5
+
+Math.abs(-5); // 5
+
+Math.sin(2);    // 0.90
+
+Math.pow(x,y);
+Math.pow(2,4);  // 16
+
+Math.floor(2.4);    // 2
+Math.ceil(2.4);     // 3
+
+Math.round(2.4);    // 2
+Math.round(2.5);    // 3
+
+Math.max(2,3,-6);   // 3
+
+Math.random();  // 0~1
+Math.random() * 6;  // 0~5
+Math.floor(Math.random() * 5)+1; // 1~5
+Math.floor(Math.random() * 11)+10; // 10~20
+
+// Date object & its methods
+
+var date = new Date();
+console.log(date);      // Sat Jun 10 2023 08:51:30 GMT-0700 (Pacific Daylight Time)
+console.log(date.getFullYear()); // 2023
+console.log(date.getMonth()); // 0~11
+console.log(date.getDate());    // 10
+console.log(date.getDay()); //  0(Sunday)~6(Saturday)
+console.log(date.getHours());   //  24 hour format : 17
+console.log(date.getMinutes()); 
+
+// DOM ==> Document Object Model
+Javascript main purpose is working with HTML elements.
+Every html tag can be accessed And Selected by Document object.
+
+document.getElementById("heading1");
+<h1 id=​"heading1">​This is a heading 1​</h1>​
+
+document.getElementById("heading1").innerHTML = "Hello";
+
+var myHeading = document.getElementById("heading1");
+myHeading.innerHTML = "Hello";
+
+document.getElementsByTagName("h1")[0].innerHTML = "HI";
+document.getElementsByClassName("para")[0].innerHTML = "HIYo";
+
+// querySelector
+
+document.querySelector("#pid").innerHTML = "This is changed";   // for id = "pid"
+document.querySelector(".pid").innerHTML = "This is changed";   // for class = "pid"
+document.querySelector("p").innerHTML = "This is changed";   // for tag = <p>
+document.querySelector("ul>li>a").innerHTML = "new text";
+document.querySelector("li a").innerHTML = "new text";
+document.querySelector("div a").innerHTML = "new text";
+document.querySelector(".my-div a").innerHTML = "new text";
+document.querySelectorAll("p")[0].innerHTML = "new text";
+
+// Event handler to onclick event
+
+<button onclick="alert('hello')">click me</button>
+
+function mikyang(){
+    alert('Hi, I am Mikyang!');
+}
+
+<button onclick="mikyang()">click me</button>
+
+var myID = document.querySelector("#pid");
+function mikyang(){
+    myID.innerHTML = "This is changed";   
+}
+
+<button onclick="mikyang()">click me 1</button>
+<button onclick="mikyang2()">click me 2</button>
+<p>demo</p>
+<img id="iid" src="#" alt="" width="300" height="500">
+
+var myvar = document.querySelector("#iid");
+
+function mikyang(){
+    myvar.src="img/m1.jpeg";
+}
+
+function mikyang2(){
+    myvar.src="img/m2.jpg";
+}
+
+DOM:
+1. Find/get
+2. Add
+3. change
+4. Delete HTML elements
+
+2 important subjects in DOM:
+1. DOM Methods  ==> getElementById();
+2. DOM Properties ==> innerHTML
+
+1. Find/get
+Methods:
+document.getElementById(id);
+document.getElementsByTagName(name);
+document.getElementsByClassName(name);
+document.querySelector();
+document.querySelectorAll();
+
+var link = document.getElementsByTagName("a")[0];
+-> undefined
+link
+-> <a href=​"#">​Visit Google​</a>​
+
+Properties:
+link.innerHTML
+-> 'Visit Google'
+link.innerHTML = "study with anis"
+-> 'study with anis'
+link.style.textDecoration = "none"
+-> 'none'
+link.style.color = "green"
+-> 'green'
+link.style.fontSize = "1.5rem"
+-> '1.5rem'
+link.href
+-> 'http://127.0.0.1:5500/index.htm#'
+link.href = "http://google.com"
+-> 'http://google.com'
+
+var heading1 = document.getElementsByTagName("h1")[0];
+-> undefined
+heading1
+-> <h1>​Hello​</h1>​
+heading1.innerHTML = "Say hello"
+-> 'Say hello'
+
+// How to create and add HTML element at the end using JS:
+var heading3 = document.createElement("h1");
+var text = document.createTextNode("This is heading 3");
+heading3.appendChild(text);
+
+var myDiv = document.getElementById("my-div");
+myDiv.appendChild(heading3);
+
+// removing a HTML element
+var heading2 = document.getElementsByTagName("h1")[1];
+myDiv.removeChild(heading2);
+
+// adding element in a specific position
+var heading0 = document.createElement("h1");
+var text0 = document.createTextNode("This is heading 0");
+
+heading0.appendChild(text0);
+
+var heading1 = document.getElementsByTagName("h1")[0];
+myDiv.insertBefore(heading0,heading1);
+
+// Seeing class list
+document.getElementById("my-div").classList;
+-> DOMTokenList ['my-class', value: 'my-class']
+
+// adding a class
+document.getElementById("my-div").classList.add("class-O");
+-> undefined
+document.getElementById("my-div").classList;
+-> DOMTokenList(2) ['my-class', 'class-O', value: 'my-class class-O']
+
+// removing a class
+document.getElementById("my-div").classList.remove('my-class');
+-> undefined
+document.getElementById("my-div").classList;
+-> DOMTokenList ['class-O', value: 'class-O']
+
+// replace HTML element
+myDiv.replaceChild(newChild,oldChild);
+
+// DOM and DOM Tree
+Document Object Model represents html and xml like a tree structure
+XML:
+The Extensible Markup Language (XML) is a simple text-based format for representing structured information: documents, data, configuration, books, transactions, invoices, and much more. It was derived from an older standard format called SGML (ISO 8879), in order to be more suitable for Web use.
+
+// Traversing and Manipulating
+Manipulating ==> creating, inserting and removing elements
+Traversing ==> selecting an element from other elements
+               moving from one element to other element
+
+// How to select DOM elements:
+1.  getElementById();
+2.  getElementsByTagName();
+3.  getElementsByClassName();
+4.  querySelector();
+5.  querySelectorAll();
+
+// 3 directions of traversing:
+1. Downwards
+    i. querySelector() / querySelectorAll()
+   ii. children
+2. Upwards
+    i. parentElement
+3. Sideways
+    i. nextElementSibling, previousElementSibling
+   ii. parentElement + children + index
+
+<ol class="students-list">
+    <li class="student-a">student A</li>
+    <li class="student-b">student B</li>
+    <li class="student-c">student C</li>
+</ol>
+
+1. Downwards    i. querySelector() / querySelectorAll()  Demo
+
+// old way / inefficient way
+
+const studentsList = document.querySelector(".students-list");
+const studentA = document.querySelector(".student-a");
+
+// efficient way
+
+const studentsList = document.querySelector(".students-list");
+const studentA = studentsList.querySelector(".student-a");
+
+1. Downwards   ii. children Demo
+
+const studentsList = document.querySelector(".students-list");
+// studentsList.children
+const studentA = studentsList.children[0];  // index related
+
+2. Upwards parentElement Demo
+
+querySelector() only selects one element , if there are many same elements then the first element is selected by querySelector by default
+
+const studentA = document.querySelector("li");
+const studentsList = studentA.parentElement;
+
+3. Sideways i. nextElementSibling, previousElementSibling
+
+const studentA = document.querySelector("li");
+const studentB = studentA.nextElementSibling;
+const studentC = studentB.nextElementSibling;
+
+const studentC = document.querySelectorAll("li")[2];
+const studentB = studentC.previousElementSibling;
+const studentA = studentB.previousElementSibling;
+
+3. Sideways ii. parentElement + children + index
+
+const studentA = document.querySelector("li");
+const studentsList = studentA.parentElement;
+const studentC = studentsList.children[2];
+
+// Selecting CSS style from JS
+
+<p id="para">This is a paragraph</p>
+<button onclick="addstyle()">add style</button>
+<button onclick="removestyle()">remove style</button>
+
+// inefficient way
+var obj = document.getElementById("para").style;
+function addstyle(){
+    obj.fontSize = "60px";
+    obj.fontStyle = "italic";
+    obj.fontWeight = "bold";
+    obj.color = "red";
+}
+
+function removestyle(){
+    obj.fontSize = "1em";
+    obj.fontStyle = "normal";
+    obj.fontWeight = "normal";
+    obj.color = "black";
+}
+
+// efficient way
+
+.para-style{
+    font-size : 60px;
+    font-style : italic;
+    font-weight : bold;
+    color : red;
+}
+
+var obj = document.getElementById("para").classList;
+function addstyle(){
+    obj.add("para-style");
+}
+
+function removestyle(){
+    obj.remove("para-style");
+}
+
+// Event Listener
+
+with which we want to add listener first we need to find it and select it
+
+document.querySelector("button").addEventListener("click",myFunction);
+                                                   mouseover
+                                                   mouseout
+                                                   mouse in
+function myFunction(){
+    alert("Hello");
+}
+
+// using anonymous function:
+
+document.querySelector("button").addEventListener("click",function(){
+    alert("Hello");
+});
+
+
+.my-style{
+    color: tomato;
+    font-size: 3rem;
+}
+
+h1{
+    display: inline;
+}
+
+<h1>I miss my Bangladesh</h1>
+
+var myVar = document.querySelector("h1");
+myVar.addEventListener("mouseover",function(){
+    myVar.classList.add("my-style");
+});
+
+myVar.addEventListener("mouseout",function(){
+    myVar.classList.remove("my-style");
+});
+
+// Event Listeners with multiple elements
+
+<h1>You have not clicked any button</h1>
+<button class="mybutton">button 1</button>
+<button class="mybutton">button 2</button>
+<button class="mybutton">button 3</button>
+
+// inefficient way
+var myVar = document.querySelectorAll(".mybutton")[0];
+var heading = document.querySelector("h1");
+myVar.addEventListener("click",function(){
+    var text = this.innerHTML;
+    heading.innerHTML = text +" is clicked";
+});
+
+var myVar1 = document.querySelectorAll(".mybutton")[1];
+myVar1.addEventListener("click",function(){
+    var text = this.innerHTML;
+    heading.innerHTML = text +" is clicked";
+});
+
+var myVar2 = document.querySelectorAll(".mybutton")[2];
+myVar2.addEventListener("click",function(){
+    var text = this.innerHTML;
+    heading.innerHTML = text +" is clicked";
+});
+
+// efficient way
+
+var len = document.querySelectorAll(".mybutton").length;
+
+for(var i=0;i<len;i++){
+    var myVar = document.querySelectorAll(".mybutton")[i];
+    var heading = document.querySelector("h1");
+    myVar.addEventListener("click",function(){
+        var text = this.innerHTML;
+        heading.innerHTML = text +" is clicked";
+    });
+}
+
+// playing audio 
+
+<button class="myButton a">a</button>
+<button class="myButton b">b</button>
+<button class="myButton c">c</button>
+
+var audio = new Audio('sounds/A1.mp3');
+audio.play();
+
+var selectedButton = document.querySelector("."+text);
+selectedButton.classList.add("anim");
+
+setTimeout(function(){
+    selectedButton.classList.remove("anim");
+},1000);    // 1 second
+
+document.addEventListener("keypress",function(event){
+                           keyup
+                           keydown
+    var text = event.key;
+    audioPlay(text);
+    playAnimation(text);
+});
+
+var count=0;
+document.querySelector("textarea").addEventListener("keypress",function(event){
+    count++;
+    document.querySelector("p").innerHTML = "You have pressed "+count;
+});
+
+// DOM Event - Event Object
+// onchange event
+
+var input = document.querySelector('input');    //  var input = document.querySelector('input[name=name]');
+input.addEventListener("change",changeHandler);
+
+function changeHandler(e){
+    console.log("changed");
+}
+
+function changeHandler(e){
+    console.log(e);
+}
+
+function changeHandler(e){
+    console.log(e.type);    //  change
+}
+
+function changeHandler(e){
+    console.log(e.target);    //  <input type="text" name="name" id="">
+}
+
+function changeHandler(e){
+    console.log(e.target.className); // name-input
+}
+
+function changeHandler(e){
+    console.log(e.target.id); // name-input
+}
+
+function changeHandler(e){
+   console.log(e.target.value); // value inserted in textbox will be shown
+}
+
+var programs = document.querySelectorAll('input[name=program]');
+
+Array.from(programs).map((program) => {                     // map is an Array function. that's why NodeList(programs) needs to be converted into Array to use the map. The map will get one by one elements from the array(programs)  
+    program.addEventListener("change",programHandler);
+});
+
+function programHandler(e){
+    if(e.target.checked)
+        console.log("checked");
+}
+
+function programHandler(e){
+    if(e.target.checked)
+        console.log(e.target.value);
+}
+
+<label for="department">Department: </label>
+<select name="department" id="department">
+    <option value="cse">CSE</option>
+    <option value="eee">EEE</option>
+    <option value="llb">LLB</option>
+</select>
+
+var department = document.querySelector("#department");
+
+department.addEventListener('change',departmentHandler);
+
+function departmentHandler(e){      // I am the Loser
+    console.log("selected");
+}
+
+function departmentHandler(e){      // I am the king
+    console.log(e.target.value);
+}
+
+// function gets overpowered by the later same function signature
+
+// Submit Event requires form
+
+form attributes: 
+action ==> where the form will be submitted
+method ==> post , get
+
+<form action="">
+    <div>
+        <label for="name">
+            Name : <input type="text" name="name" id="name" required autofocus>
+        </label>
+    </div>
+    <div>
+        <label for="email">
+            Email : <input type="email" name="email" id="email" required size="30">
+        </label>
+    </div>
+    <div>
+        <label for="password">
+            Password : <input type="password" name="password" id="password" required minlength="4" maxlength="8">
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="signup">
+<!--    <button type="submit"></button> also works -->
+    </div>
+</form>
+
+var form = document.querySelector("form");
+var name = form.querySelector("div #name");
+var email = form.querySelector("div #email");
+var password = form.querySelector("div #password");
+
+form.addEventListener('submit', formHandler);
+
+function formHandler(e){
+    e.preventDefault();     // for stopping page refresh
+    console.log('submit');
+}
+
+function formHandler(e){
+    e.preventDefault();     // for stopping page refresh
+    console.log(name.value);
+    console.log(email.value);
+    console.log(password.value);
+}
+
+function formHandler(e){
+    e.preventDefault();     // for stopping page refresh   
+    const userInfo = {
+        name: name.value,
+        email: email.value,
+        password: password.value
+    };
+    console.log(userInfo);
+    // for clearing form data
+    name.value = "";
+    email.value = "";
+    password.value = "";
+}
+
+// audio/video events
+// canplay, play, playing, pause, progress(video download, buffering), ended, volumechange, waiting(when video gets stopped because of buffering)    ==> for JS
+// oncanplay, onplay, onplaying, onpause, onprogress, onended, onvolumechange, onwaiting    ==> for HTML
+
+<video width="400" controls loop autoplay muted>
+    <source src="./W.mp4" type="video/mp4">
+    your browser does not support html5 video element
+</video>
+
+const video = document.querySelector("video");
+video.addEventListener('canplay',function(){
+    console.log("canplay");
+});
+
+video.addEventListener('play',function(){
+    console.log("play");
+});
+
+video.addEventListener('playing',function(){
+    console.log("playing");
+});
+
+video.addEventListener('pause',function(){
+    console.log("pause");
+});
+
+video.addEventListener('ended',function(){  // ended doesn't work if loop is enabled
+    console.log("Thanks for watching!");
+});
+
+video.addEventListener('volumechange',function(){
+    console.log("volumechange");
+});
+
+// load ==> when we load an object
+// unload ==> page reload, object unload
+// scroll ==> 
+// resize ==> when browser window is resized
+// toggle ==> when details element in html gets opened or close
+window is a global object
+
+<body style="height: 150vh">
+
+window.addEventListener("load",function(){
+    console.log("load");
+});
+
+window.addEventListener("unload",function(){
+    console.log("unload");
+});
+
+window.addEventListener("scroll",function(){
+    console.log("scroll");
+});
+
+window.addEventListener("resize",function(){
+    console.log("resize");
+});
+
+window.addEventListener("resize",function(){
+    const height = window.outerHeight;
+    const width = window.outerWidth;
+    console.log(`height: ${height}, width: ${width}`);  // ` string literal ` 
+});
+
+<details>
+    <summary>Text</summary>
+    <p>Paragraph</p>
+</details>
+
+const details = document.querySelector("details");
+details.addEventListener("toggle",function(){
+    console.log("toggle!");
+});
+
+const details = document.querySelector("details");
+details.addEventListener("toggle",function(e){
+    console.log(e.target.open); // returns true / false
+});
+
+// MouseEvent won't work with - <html>, <head>, <meta>, <title>, <br>, <style>, <script>, <iframe>, <param>, <base>, <bdo>
+
+1. onclick
+2. ondblclick
+3. onmousedown
+4. onmouseup
+5. onmouseenter
+6. onmouseleave
+7. onmousemove
+8. onmouseover
+
+const div = document.querySelector('div');
+console.log(div);
+
+div.addEventListener('click',function(){
+    console.log('click');
+});
+
+div.addEventListener('dblclick',function(){
+    console.log('dblclick');
+});
+
+div.addEventListener('mousedown',function(){
+    console.log('mousedown');
+});
+
+div.addEventListener('mouseup',function(){
+    console.log('mouseup');
+});
+
+div.addEventListener('mouseenter',function(){
+    console.log('mouseenter');
+});
+
+div.addEventListener('mouseleave',function(){
+    console.log('mouseleave');
+});
+
+div.addEventListener('mousemove',function(){
+    console.log('mousemove');
+});
+
+div.addEventListener('mouseover',function(){
+    console.log('mouseover');
+});
+
+div.addEventListener('mousemove',function(e){
+    console.log("clientX = "+e.clientX+", clientY = "+e.clientY); // compared to window
+    console.log("offsetX = "+e.offsetX+", offsetY = "+e.offsetY); // compared to element
+});
+
+div.addEventListener('click',function(e){
+    console.log(e);
+    console.log(e.target);  //  <div id="my-div" class="div1">
+                                    <p>I am a div</p>
+                                </div>
+    console.log(e.target.id);   // my-div
+    console.log(e.target.className);    // div1
+    console.log(e.target.innerHTML);    // <p>I am a div</p>
+    console.log(e.target.textContent);  // I am a div
+    console.log(e.target.innerText);    // I am a div
+});
+
+
+<button class="btn">btn 1</button>
+<button class="btn">btn 2</button>
+<button class="btn">btn 3</button>
+
+const buttons = document.querySelectorAll('.btn');
+console.log(buttons);
+
+Array.from(buttons).map((button)=>{
+    button.addEventListener('click',function(){
+        console.log('clicked');
+    });
+});
+
+Array.from(buttons).map((button)=>{
+    button.addEventListener('click',function(e){
+        console.log(e.target.innerHTML);            // btn1 btn2 btn3 if clicked
+    });
+});
+
+Array.from(buttons).map((button)=>{
+    button.addEventListener('click',function(e){
+        console.log(e.target.innerText);            // btn1 btn2 btn3 if clicked
+    });
+});
+
+Array.from(buttons).map((button)=>{
+    button.addEventListener('click',function(e){
+        console.log(e.target.textContent);          // btn1 btn2 btn3 if clicked
+    });
+});
+
+// KeyboardEvent Object
+1. keydown
+2. keypress
+3. keyup
+
+some properties - key, keyCode, code, shiftKey, ctlKey, repeat
+
+const textarea = document.querySelector("textarea");
+textarea.addEventListener('keydown',function(e){
+    console.log('keydown');
+    if(e.repeat)
+        alert('do not repeat');
+});
+
+textarea.addEventListener('keypress',function(){
+    console.log('keypress');
+});
+
+textarea.addEventListener('keyup',function(){
+    console.log('keyup');
+});
+
+textarea.addEventListener('keyup',function(e){
+    console.log(e.key);        //          a
+    console.log(e.keyCode); // ASCII code 65
+    console.log(e.code);       // KeyA ShiftLeft
+    console.log(e.shiftKey);    // shift => false ; shift + anykey => true
+    if(e.shiftKey)
+        console.log('shift+'+e.key);    // shift+anykey 
+});
+
+// FocusEvent Object
+// FocusEvent won't work with - <html>, <head>, <meta>, <title>, <br>, <style>, <script>, <iframe>, <param>, <base>, <bdo>
+1. onblur
+2. onfocus
+3. onfocusin
+4. onfocusout
+
+const input = document.querySelector('input');
+input.addEventListener('blur',function(e){
+    console.log('blur is occured');
+    input.style.backgroundColor = "transparent";
+    input.style.padding = "0";
+    console.log(e.target.value);
+    e.target.value = e.target.value.toUpperCase();
+    input.value = e.target.value.toUpperCase(); 
+});
+
+input.addEventListener('focus',function(){
+    console.log('focus is occured');
+    input.style.backgroundColor = "orange";
+    input.style.padding = "2rem";
+});
+
+input.addEventListener('focusin',function(){
+    console.log('focusin is occured');
+});
+
+input.addEventListener('focusout',function(){
+    console.log('focusout is occured');
+});
+
+// ClipboardEvent Object
+oncopy
+oncut
+onpaste
+
+const input = document.querySelector('input');
+input.addEventListener('copy',function(){
+    console.log('you have copied');
+});
+
+input.addEventListener('cut',function(){
+    console.log('you have cut');
+});
+
+input.addEventListener('paste',function(){
+    console.log('you have pasted');
+});
+
+const input = document.querySelector('input');
+const p = document.querySelector('p');
+input.addEventListener('copy',function(){
+    p.innerText = "you have copied";
+});
+
+input.addEventListener('cut',function(){
+    p.innerText = 'you have cut';
+});
+
+input.addEventListener('paste',function(){
+    p.innerText = 'you have pasted';
+});
+
+// DragEvent Object
+1. ondragstart
+2. ondrag
+3. ondragend
+4. ondragenter
+5. ondragleave
+6. ondragover
+7. ondrop
+
+<p id="drag1" draggable="true">hi I am sakib</p>
+
+const div = document.querySelector('div');
+const p = document.querySelector('p');
+
+p.addEventListener("dragstart",function(e){
+    e.dataTransfer.setData("Text",e.target.id);
+});
+
+div.addEventListener("dragover",function(e){
+    e.preventDefault(); // default property of div is stopped   , now it is ready to receaive the paragraph
+});
+
+div.addEventListener("drop",function(e){
+    let id = e.dataTransfer.getData("Text");
+    console.log(id);
+    div.appendChild(document.getElementById(id));
+    e.preventDefault(); // default property of div is cancelled
+});
+
+// BOM ( Browser Object Model)  // let JS talk to the browser
+// window object
+// location object  ==> to obtain current page address(url), to direct browser to open a new page
+
+console.log(location.href); ==> http://127.0.0.1:5500/Four/index.htm
+                                protocol hostname:port/filepath
+
+console.log(location.protocol); ==> http:
+console.log(location.hostname); ==> 127.0.0.1
+console.log(location.port); ==> 5500
+console.log(location.pathname); ==> /Four/index.htm
+
+var locationdiv = document.querySelector(".location-div");
+var p1 = locationdiv.children[0];
+p1.textContent = location.href;
+
+var p2 = locationdiv.children[1];
+p2.textContent = location.protocol;
+
+var p3 = locationdiv.children[2];
+p3.textContent = location.hostname;
+
+var p4 = locationdiv.children[3];
+p4.textContent = location.port;
+
+var p5 = locationdiv.children[4];
+p5.textContent = location.pathname;
+
+var visitButton = document.getElementById('visit-button');
+visitButton.addEventListener("click",function(){
+    location.assign("http://mangaforfree.net/");
+});
+
+popup boxes ==> alert, confirm, prompt
+
+confirm('Are you sure?');   ==> Ok = true Cancel = false
+
+function myFunction(){
+    let value = confirm('Do u want to delete?');
+    if(value)
+        console.log('deleted');
+    else
+        console.log('not deleted');
+}
+
+myFunction();
+
+prompt ==> cancel == null
+
+function myFunction(){
+    var h1 = document.createElement('h1');
+    var text;
+    var name = prompt('Enter your name : ');
+    if(name == null || name == "")
+        text = 'no name found';
+    else
+        text = "Welcome "+name;
+    var h1t = document.createTextNode(text);
+    h1.appendChild(h1t);
+    document.body.appendChild(h1);
+}
+
+myFunction();
+
+// JS Timig Events Methods
+
+setTimeout();   ==> initiate something after a specific time    ==> To make program asynchronous
+setInterval();  ==> repeat something after a specific time
+
+setTimeout(()=>{    // anonymous function
+    console.log('hi');
+},2000);
+
+// Run Time Program Error handling keywords ==> try, catch, finally, throw ( for creating custom error)
+
+try{
+    // test code
+}catch(err){
+    // handle error
+    console.log(err);           
+    console.log(err.name);
+    console.log(err.message);
+}finally{                       // it will happen no matter what
+    alert('bye');   
+}
+
+// throw demo
+
+var num = input.value;
+try{
+    if(num<5)
+        throw "input is too low"
+    else if(num>10)
+        throw "input is too high"
+    else
+        console.log(num);
+}
+catch(err){
+    console.log(err);
+}
+
+// Canvas
+
+<canvas id="myCanvas" width="400px" height="300px"></canvas>
+
+var c = document.getElementById('myCanvas');
+
+var ctx = c.getContext("2d");
+ctx.lineWidth=3;
+ctx.strokeStyle = "black";
+ctx.strokeRect(10,10,380,280);
+
+ctx.fillStyle = "green";
+ctx.fillRect(12,12,376,276);
+
+var centerX = c.width/2;
+var centerY = c.height/2;
+
+ctx.beginPath();
+ctx.arc(centerX,centerY,80,0,2*Math.PI,false);
+    //  center     ,    radius,starting angle,ending angle,counterclockwise
+ctx.fillStyle="red";
+ctx.fill();
+ctx.stroke();
+
+// ES6 ==> ECMASCRIPT6
+
+let ==>  works scopewise
+
+// Declaring Function
+
+const add = (x,y)=>{
+    console.log(x+y);
+}
+
+add(20,30);
+
+In JS, u can use a variable before declaration, JS Default Bahavior ( Hoisting )
+
+node index.js
+
+"use strict"
+x=20;   // will throw error
+
+// Demo of Default Parameter
+
+function message(msg = 'this is default msg'){
+    console.log(`${msg}`);
+}
+
+message();
+
+// Rest Parameter   ==> packing
+
+function message(x,y, ...z){
+    console.log(`x = ${x}, y = ${y}, z = ${z}`);
+}
+
+message(10,20,30,40,50);    // x = 10, y = 20, z = 30,40,50
+
+// Spread Operator  ==> unpacking
+
+function addNum(x,y,z){
+    return x+y+z;
+}
+
+var num=[1,2,3];
+console.log(addNum(num[0],num[1],num[2]));  // 6
+console.log(addNum(...num));                // 6
+var num1 = [5,6,...num];
+console.log(num1);                          // [5,6,1,2,3]
+
+var num1 = [5,6];
+var num2 = [7,8];
+var nums = [...num1, ...num2];
+console.log(nums);                          // [5,6,7,8]
+
+// Object Literals
+
+// inefficient way
+
+function info(name,age){
+    return{
+        name: name,
+        age: age
+    }
+}
+
+console.log(info('rokibul islam',30));  //  { name: 'rokibul islam', age: 30 }
+
+// ES6 way
+
+function info(name,age){
+    return{
+        name,
+        age
+    }
+}
+
+console.log(info('rokibul islam',30));  //  { name: 'rokibul islam', age: 30 }
+
+let message = {
+    body: function(){
+        return 'Hi, this is object'
+    }
+}
+
+console.log(message.body());    // Hi, this is object
+
+// Using Concise Method
+
+let message = {
+    body(){
+        return 'Hi, this is object'
+    }
+}
+
+console.log(message.body());    //  Hi, this is object
+
+let message = {
+    'body name'(){
+        return 'Hi, this is object'
+    }
+}
+
+console.log(message['body name']());    //  Hi, this is object
+
+// for of
+
+const nums = ["s1","s2","s3"];
+
+for(let name of nums){
+    console.log(name);      // s1 
+}                              s2
+                               s3
+
+// for in
+
+let stu = {
+    ID: 127,
+    name: "Sakib Ahmed",
+    cgpa: 3.71
+}
+
+for(let x in stu){
+    console.log(x);     // ID
+}                          name
+                           cgpa
+
+for(let x in stu){          // 127
+    console.log(stu[x]);    // Sakib Ahmed
+}                           // 3.71
+
+for(let x in stu){                      // ID : 127
+    console.log(`${x} : ${stu[x]}`);    // name : Sakib Ahmed
+}                                       // cgpa : 3.71
+
+// forEach 
+
+var num = [10,20,30,40];
+
+num.forEach(myFunction);
+
+function myFunction(s){
+    console.log(s);
+}
+
+num.forEach(function(s){
+    console.log(s);
+});
+
+var num = [10,20,30,40];
+num.forEach(function(s,index,arr){
+    arr[index]=s+5;
+});
+console.log(num);                   //  [ 15, 25, 35, 45 ]
+
+// map
+
+var numsq = num.map(function(s){
+    return s*s;
+});
+console.log(numsq);                 // [100,400,900,1600]
+
+// filter
+
+var num = [10,4,20,8,30,9,40];
+
+var numsq = num.filter(function(s){
+    return s>10;
+});
+console.log(numsq);             //  [20,30,40]
+
+// Arrow Function
+
+const disp2 = () => {
+    console.log('I am disp2');
+};
+
+const disp2 = () => console.log('I am disp2');
+
+disp2();
+
+const disp2 = () => 'I am disp2';
+
+const add = (num1,num2) => num1+num2;
+console.log(add(10,20));        // 30
+
+const add = (num1,num2) => {return num1+num2};
+console.log(add(10,20));        // 30
+
+var stu =[
+    {
+        id: 101,
+        name: "sakib",
+        gpa: 3.65
+    },
+    {
+        id: 102,
+        name: "anisul",
+        gpa: 3.52
+    },
+    {
+        id: 103,
+        name: "jihad",
+        gpa: 2.65
+    },
+    {
+        id: 104,
+        name: "shihab",
+        gpa: 3.2
+    }
+];
+
+function studentnames(){
+    return stu.filter(x=>{
+        return x.gpa>3;
+    })
+}
+
+function studentnames(){
+    return stu.filter(x=>x.gpa>3);
+}
+
+function studentnames(){
+    return stu.filter(function(x){
+        return x.gpa>3;
+    })
+}
+
+console.log(studentnames());    
+
+Output:
+[
+  { id: 101, name: 'sakib', gpa: 3.65 },
+  { id: 102, name: 'anisul', gpa: 3.52 },
+  { id: 104, name: 'shihab', gpa: 3.2 }
+]
+
+function studentnames(){
+    return stu.filter(function(x){
+        return x.gpa>3;
+    }).map(function(y){
+        return y.name;
+    });
+}
+
+function studentnames(){
+    return stu.filter(x=>x.gpa>3).map(y=>y.name);
+}
+
+const studentnames = ()=> stu.filter(x=>x.gpa>3).map(y=>y.name);
+
+console.log(studentnames());
+
+Output:
+[ 'sakib', 'anisul', 'shihab' ]
+
+const studentnames = ()=> stu.filter(x=>x.gpa>3).map(y=>y.id);
+console.log(studentnames());
+Output:
+[ 101, 102, 104 ]
+
+// Array Destructure
+let num = [10,20,30];
+let [num1,num2,num3]=num;
+console.log(num1);          // 10
+console.log(num2);          // 20
+
+let num = [10,20,30,40,50];
+let [num1,num2,...num3]=num;
+console.log(num3);  //  [ 30, 40, 50 ]
+
+// swap variables
+
+let a=10, b = 20;
+[a,b]=[b,a];
+console.log(a);   //  20
+console.log(b);   //  10
+
+// object Destructure
+
+const student = {
+    id: 101,
+    name: "Anisul Islam",
+    gpa: 3.92
+}
+
+const{id,name} = student;
+
+console.log(id);            //  101
+console.log(name);          //  Anisul Islam
+
+// nested object Destructure
+
+const student = {
+    id: 101,
+    name: "Anisul Islam",
+    gpa: 3.92,
+    languages: {
+        native: "bangla",
+        beginner: "english"
+    }
+}
+
+const{name,languages} = student;
+
+console.log(name);                  //   Anisul Islam
+console.log(languages);         //  { native: 'bangla', beginner: 'english' }
+console.log(languages.native);      // bangla
+
+// Destructuring Function Parameters
+
+const student = {
+    id: 101,
+    name: "Anisul Islam",
+}
+
+const studentInfo = (student) => {
+    console.log(`${student.id}, ${student.name}`);          // 101, Anisul Islam
+}
+
+const studentInfo = ({id,name}) => {
+    console.log(`${id}, ${name}`);          // 101, Anisul Islam
+}
+
+studentInfo(student);           
+
+// Array Methods
+// find(callback,value) ==> return the value of the first element that pass certain condition
+
+let nums = [5,55,14,78,63];
+
+let firstNum = nums.find(x=>x%2===0);
+console.log(firstNum);                  // 14 
+
+const firstEven = (value,index,arr) => {
+    if(value%2==0)
+        return value;
+}
+
+let firstNum = nums.find(firstEven);
+console.log(firstNum);                      // 14
+let firstNum = nums.findIndex(firstEven);
+console.log(firstNum);                      // 2
+
+const students = [
+    {
+        id: 101,
+        gpa: 2.6
+    },
+    {
+        id: 102,
+        gpa: 4.6
+    },
+    {
+        id: 103,
+        gpa: 3.6
+    },
+    {
+        id: 104,
+        gpa: 2.66
+    }
+];
+
+console.log(students.find(x=>x.gpa>4));     // { id: 102, gpa: 4.6 }
+
+// findIndex(callback,value) ==> return the index of the first element that pass certain condition
+
+// String Methods
+// startsWith(searchstring,position) -> check a string starts with another string
+
+const message = "Today is Friday";
+console.log(message.startsWith('Today',0));   // true
+console.log(message.endsWith('Today'));     // false
+console.log(message.endsWith('Friday'));        // true
+console.log(message.includes('Friday'));    // true
+
+// endsWith(searchstring,position) -> check a string ends with another string
+// includes(searchstring,position) -> check if a string contains another string
+// all these methods are case sensitive
+
+// ES6 Modules
+index.htm:
+<script src="index.js" type="module"></script>
+
+myModule.js:
+export let text = "Welcome to module";
+
+export function setText(txt){
+    text = txt;
+}
+
+index.js:
+import {text} from './myModule.js'
+console.log(text);                  
+
+Output:
+Welcome to module
+
+index.js
+import {text,setText} from './myModule.js'
+console.log(text);
+setText("goodbye sayonara");
+console.log(text);
+
+Output:
+Welcome to module
+goodbye sayonara
+
+myModule.js:
+let text = "Welcome to module";
+
+export {text as message}
+
+index.js:
+import {message} from './myModule.js'
+console.log(message);
+
+Output:
+Welcome to module
+
+myModule.js:
+export let text = "Welcome to module";
+
+index.js:
+import {text as message} from './myModule.js'
+console.log(message);
+
+Output:
+Welcome to module
+
+// ES6 class 
+class Student{
+    constructor(id,name){
+        this.id=id;
+        this.name=name;
+    }
+
+    set studentName(name){
+        this.name = name;
+    }
+
+    get studentInfo(){
+        return this.id+" "+this.name;
+    }
+}
+
+let s1 = new Student(101,"Anis");
+
+console.log(s1);                    // Student{ id: 101, name: 'Anis'}
+console.log(s1.id);                 // 101
+console.log(s1.name);               // Anis
+s1.studentName = "lalala";
+console.log(s1.name);               // lalala
+console.log(s1.studentInfo);        // 101 lalala
+
+JS:
+-> single threaded programming
+-> blocking code behavior
+
+// Callback | Higher Order Function
+
+function square(x){
+    console.log(`square of ${x} : ${x*x}`);
+}
+
+const y = square;
+
+y(5);               //  square of 5 : 25
+
+function higherOrderFunction(num,callback){
+    callback(num);
+}
+
+higherOrderFunction(6,square);      //  square of 6 : 36
+
+const taskOne = (callback) => {
+    console.log('Task1');
+    callback();
+}
+
+const taskTwo = (callback) => {
+    setTimeout(()=>{
+        console.log('Task2. Data Loading');
+        callback();
+    },3000);
+}
+
+const taskThree = (callback) => {
+    console.log('Task3');
+    callback();
+}
+
+const taskFour = (callback) => {
+    console.log('Task4');
+    callback();
+}
+
+const taskFive = () => {
+    console.log('Task5');
+}
+
+taskOne(function f1(){
+    taskTwo(function f2(){
+        taskThree(function f3(){
+            taskFour(function f4(){
+                taskFive();
+            });
+        });
+    });
+});
+
+taskOne(function(){
+    taskTwo(function(){
+        taskThree(function(){
+            taskFour(function(){
+                taskFive();
+            })
+        });
+    });
+});
+
+taskOne(()=>{
+    taskTwo(()=>{
+        taskThree(()=>{
+            taskFour(()=>{
+                taskFive();
+            });
+        });
+    });
+});
+
+// Promise  ==> 3 stages --> Pending, resolve, reject
+
+console.log('welcome');
+
+const promise1 = new Promise((resolve,reject)=>{
+    let completedPromise = true;
+    if(completedPromise)
+        resolve("completed promise 1");
+    else
+        reject("not completed promise 1");
+});
+
+console.log(promise1); 
+                            // welcome    
+console.log('end');         // Promise { 'completed promise 1' }
+                            // end
+
+promise1.then(res=> console.log(res));  // welcome
+                                        // end 
+                                        // completed promise 1
+
+// let completedPromise = false;
+promise1.then(res=> console.log(res)).catch(err=> console.log(err));  // welcome
+                                                                      // end 
+                                                                      // not completed promise 1
+
+// reject(new Error("not completed promise 1"));
+Output:
+welcome
+end
+Error: not completed promise 1
+    at C:\Users\sakib\Desktop\Full Stack Road\JS\Practice\Four\index.js:8:16
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (C:\Users\sakib\Desktop\Full Stack Road\JS\Practice\Four\index.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1226:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1280:10)
+    at Module.load (node:internal/modules/cjs/loader:1089:32)
+    at Module._load (node:internal/modules/cjs/loader:930:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+// promise1.then(res=> console.log(res)).catch(err=> console.log(err.message));  // welcome
+                                                                                 // end 
+                                                                                 // not completed promise 1
+
+// const promise2 = new Promise((resolve,reject)=>{
+    resolve("completed promise 2");
+   });
+
+   promise2.then(res=>console.log(res));
+Output:
+welcome
+end
+completed promise 2
+not completed promise 1
+
+//  let completedPromise = true;
+Output:
+welcome
+end
+completed promise 1
+completed promise 2
+
+// Promise.all([promise1,promise2]).then(res=>console.log(res));
+Output:
+welcome
+end
+completed promise 1
+completed promise 2
+[ 'completed promise 1', 'completed promise 2' ]
+// Using Destructure
+Promise.all([promise1,promise2]).then(([res1,res2])=>console.log(res1));
+Output:
+welcome
+end
+completed promise 1
+completed promise 2
+completed promise 1
+
+// Promise.all([promise1,promise2]).then(([res1,res2])=>console.log(res1,res2));
+Output:
+welcome
+end
+completed promise 1
+completed promise 2
+completed promise 1 completed promise 2
+
+// Promise race demo    ==> that promise will be resolved first will be selected by race
+console.log('welcome');
+
+const promise1 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("completed promise 1");
+    },2000);
+});
+
+const promise2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("completed promise 2");
+    },1000);
+});
+
+Promise.race([promise1,promise2]).then(res=>console.log(res));
+
+console.log('end');
+Output:
+welcome
+end
+completed promise 2
+
+// Promise Chaining:
+const taskOne = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task1 is completed");
+    });
+}
+
+const taskTwo = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task2 is completed");
+    });
+}
+
+const taskThree = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task3 is completed");
+    });
+}
+
+const taskFour = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task4 is completed");
+    });
+}
+
+taskOne().then(res=>console.log(res));      //  task1 is completed
+
+console.log("welcome");
+const taskOne = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task1 is completed");
+    });
+}
+
+const taskTwo = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task2 is completed");
+    });
+}
+
+const taskThree = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task3 is completed");
+    });
+}
+
+const taskFour = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task4 is completed");
+    });
+}
+
+taskOne()
+.then(res=>console.log(res))
+.then(taskTwo)
+.then(res=>console.log(res))
+.then(taskThree)
+.then(res=>console.log(res))
+.then(taskFour)
+.then(res=>console.log(res));
+
+console.log("bye");
+Output:
+welcome
+bye
+task1 is completed
+task2 is completed
+task3 is completed
+task4 is completed
+
+console.log("welcome");
+const taskOne = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task1 is completed");
+    });
+}
+
+const taskTwo = () => {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("task2 is completed")
+        },2000);
+    });
+}
+
+const taskThree = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task3 is completed");
+    });
+}
+
+const taskFour = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task4 is completed");
+    });
+}
+
+taskOne()
+.then(res=>console.log(res))
+.then(taskTwo)
+.then(res=>console.log(res))
+.then(taskThree)
+.then(res=>console.log(res))
+.then(taskFour)
+.then(res=>console.log(res));
+
+console.log("bye");
+Output:
+welcome
+bye
+task1 is completed
+task2 is completed
+task3 is completed
+task4 is completed
+
+console.log("welcome");
+const taskOne = () => {
+    return new Promise((resolve,reject)=>{
+        reject("task1 is completed");
+    });
+}
+
+const taskTwo = () => {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("task2 is completed")
+        },2000);
+    });
+}
+
+const taskThree = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task3 is completed");
+    });
+}
+
+const taskFour = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task4 is completed");
+    });
+}
+
+taskOne()
+.then(res=>console.log(res))
+.then(taskTwo)
+.then(res=>console.log(res))
+.then(taskThree)
+.then(res=>console.log(res))
+.then(taskFour)
+.then(res=>console.log(res));
+
+console.log("bye");
+Output:
+welcome
+bye
+
+console.log("welcome");
+const taskOne = () => {
+    return new Promise((resolve,reject)=>{
+        reject("task1 is not completed");
+    });
+}
+
+const taskTwo = () => {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("task2 is completed")
+        },2000);
+    });
+}
+
+const taskThree = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task3 is completed");
+    });
+}
+
+const taskFour = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task4 is completed");
+    });
+}
+
+taskOne()
+.then(res=>console.log(res))
+.then(taskTwo)
+.then(res=>console.log(res))
+.then(taskThree)
+.then(res=>console.log(res))
+.then(taskFour)
+.then(res=>console.log(res))
+.catch(err=>console.log(err));
+
+console.log("bye");
+Output:
+welcome
+bye
+task1 is not completed
+
+// async await ==> Calling and Handling promises    ==> representing asynchronous task into synchronous way
+                                                    ==> representing then catch easily
+
+console.log("welcome");
+const taskOne = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task1 is completed");
+    });
+}
+
+const taskTwo = () => {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("task2 is completed")
+        },2000);
+    });
+}
+
+const taskThree = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task3 is completed");
+    });
+}
+
+const taskFour = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task4 is completed");
+    });
+}
+
+async function f1(){
+    const t1 = await taskOne();
+    console.log(t1);
+    const t2 = await taskTwo();
+    console.log(t2);
+    const t3 = await taskThree();
+    console.log(t3);
+    const t4 = await taskFour();
+    console.log(t4);
+}
+
+//Using arrow function
+const f1 = async () => {
+    const t1 = await taskOne();
+    console.log(t1);
+    const t2 = await taskTwo();
+    console.log(t2);
+    const t3 = await taskThree();
+    console.log(t3);
+    const t4 = await taskFour();
+    console.log(t4);
+}
+
+f1();
+
+console.log("bye");      
+Output:
+welcome
+bye
+task1 is completed      
+task2 is completed
+task3 is completed
+task4 is completed        
+
+// Error Handling in async await
+
+console.log("welcome");
+const taskOne = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task1 is completed");
+    });
+}
+
+const taskTwo = () => {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("task2 is completed")
+        },2000);
+    });
+}
+
+const taskThree = () => {
+    return new Promise((resolve,reject)=>{
+        reject("task3 is not completed");
+    });
+}
+
+const taskFour = () => {
+    return new Promise((resolve,reject)=>{
+        resolve("task4 is completed");
+    });
+}
+
+const f1 = async () => {
+    try{
+        const t1 = await taskOne();
+        console.log(t1);
+        const t2 = await taskTwo();
+        console.log(t2);
+        const t3 = await taskThree();
+        console.log(t3);
+        const t4 = await taskFour();
+        console.log(t4);
+    }catch(e){
+        console.log(e);
+    }
+}
+
+f1();
+
+console.log("bye");
+Output:
+welcome
+bye
+task1 is completed
+task2 is completed
+task3 is not completed

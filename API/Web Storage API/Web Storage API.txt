@@ -1,0 +1,7 @@
+Web Storage API - allows you to store and read data in browser
+Web Storage API - localStorage, sessionStorage
+
+localStorage vs sessionStorage
+10mb            5mb
+permanent       session(tab)
+
